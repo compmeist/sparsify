@@ -2,7 +2,7 @@
 for HTML tables, this javascript routine hides column values that are duplicates ( by using classes ).  No dependencies.   You can also color the cell using classes, which may be preferred.
 
 
-# example test page
+### example
 
 
     <!DOCTYPE html>
