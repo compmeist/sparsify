@@ -15,7 +15,10 @@ for HTML tables, this javascript routine hides column values that are duplicates
      </style>
     </head>
     
-    <!-- usage: sparsify(htmlElementId,classToAdd,classToRemove); -->
+    <!-- usage: sparsify(htmlElementId,classToAdd,classToRemove);
+         ( the below tests the adding of class 'red' and 
+             the subsequent removal of 'red' and the addition of 'yellow' )
+    -->
     
     <body onload="sparsify('table1','red'); sparsify('table1','yellow','red');">
       <table id = 'table1'>
