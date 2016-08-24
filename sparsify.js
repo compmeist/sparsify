@@ -25,7 +25,7 @@
                prevCellText = prevCell.childNodes[0];
                myCell = myCols[i];
                myCellText = myCell.childNodes[0];
-               if (myCellText.data == prevCellText.data) {
+               if (myCellText && prevCellText && (myCellText.data == prevCellText.data)) {
                   if (classToRemove && (classToRemove.length)) myCell.classList.remove(classToRemove);
                   if (classToAdd && (classToAdd.length)) myCell.classList.add(classToAdd);
                }
