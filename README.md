@@ -14,6 +14,9 @@ for HTML tables, this javascript routine hides column values that are duplicates
       .yellow {color:yellow;}
      </style>
     </head>
+    
+    <!-- usage: sparsify(htmlElementId,classToAdd,classToRemove); -->
+    
     <body onload="sparsify('table1','red'); sparsify('table1','yellow','red');">
       <table id = 'table1'>
       <tr> <td>col1</td> <td>Col2</td> <td>col3</td>
