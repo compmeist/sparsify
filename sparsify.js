@@ -8,12 +8,12 @@
        var prevCell,prevCellText,myCell,myCellText;
        var myTable =document.getElementById(myTableId); if (myTable == null) return;
        var myRows = myTable.getElementsByTagName("tr"); if (myRows == null) return;
-       for(var j = 1; j < myRows.length; j++) {
+       for(var j = 1; j < myRows.length; j++) { // start at 1, so can use j-1
            myRow= myRows[j];
            myCols = myRow.getElementsByTagName("td");
            myPrevRow = myRows[j-1];   // previous row index (j-1)
            myPrevCols = myPrevRow.getElementsByTagName("td");
-           if (myCols != null) {
+           if (myCols && myPrevCols) {
              lp = myPrevCols.length;
              l = myRow.length;
              ll = l < lp ? l:lp;  // obtain the number of columns that can be compared
