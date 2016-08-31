@@ -1,7 +1,7 @@
 
 
     function sparsify(myTableId,classToAdd,classToRemove) {
-      // changes classes on table column values that are identical to those above them
+      // changes classes on table column values that are identical to those above them v1.01
        var l,lp;
        var myRow,myPrevRow;
        var myCols,myPrevCols;
