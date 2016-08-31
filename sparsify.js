@@ -1,7 +1,7 @@
 
 
     function sparsify(myTableId,classToAdd,classToRemove) {
-      // changes classes on table column values that are identical to those above them v1.01
+      // changes classes on table column values that are identical to those above them v1.02
        var l,lp;
        var myRow,myPrevRow;
        var myCols,myPrevCols;
@@ -15,7 +15,7 @@
            myPrevCols = myPrevRow.getElementsByTagName("td");
            if (myCols && myPrevCols) {
              lp = myPrevCols.length;
-             l = myRow.length;
+             l = myCols.length;
              ll = l < lp ? l:lp;  // obtain the number of columns that can be compared
              for(var i = 0; i < ll; i++) {
                prevCell = myPrevCols[i];
